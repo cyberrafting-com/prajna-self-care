@@ -28,12 +28,12 @@ a {
 }
 
 .navbar{
-    box-shadow: 0px 5px 10px 0px #aaa;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    color: #000;
-    opacity: 0.85;
+    /* box-shadow: 0px 5px 10px 0px #aaa; */
+    /* position: fixed; */
+    /* width: 100%; */
+    /* background: #fff; */
+    /* color: #000; */
+    /* opacity: 0.85; */
     z-index: 100;
 }
 
@@ -53,7 +53,7 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     padding-left: 10px;
-    /* color: #fff; */
+    color: #fff;
 }
 
 .menu-items{
@@ -83,13 +83,18 @@ a {
     padding: 15px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
 }
 
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+
 .banner {
-    padding: 150px 0 50px;
+    padding: 50px 0 50px;
 }
 
 .champion-student {
@@ -248,9 +253,6 @@ footer form .form-control, .form-control:focus {
 }
 
 @media (max-width: 2500px){
-    .navbar{
-        opacity: 0.95;
-    }
 
     .navbar-container input[type="checkbox"],
     .navbar-container .hamburger-lines{
@@ -293,7 +295,7 @@ footer form .form-control, .form-control:focus {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: #333;
+        background: #fff;
     }
     
     .navbar-container .hamburger-lines .line1{
@@ -316,8 +318,8 @@ footer form .form-control, .form-control:focus {
         height: 100vh;
         max-width: 100%;
         width: 100%;
-        transform: translate(120%);
-        display: flex;
+        /* transform: translate(120%); */
+        display: none;
         flex-direction: column;
         /* margin-left: -40px; */
         /* padding-left: 40px; */
@@ -333,7 +335,8 @@ footer form .form-control, .form-control:focus {
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
-        transform: translateX(0);
+        /* transform: translateX(0); */
+        display: block;
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
@@ -387,6 +390,9 @@ footer form .form-control, .form-control:focus {
     }
     .feturetxt {
         height: auto;
+    }
+    .champion-student .row {
+        padding-top: 20px;
     }
 }
 
